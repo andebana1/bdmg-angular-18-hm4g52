@@ -2,7 +2,12 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'ibge',
+    },
+    {
         path: 'ibge',
-        loadComponent: () => import('../../projects/ibge-form/src/app/app.component').then((c) => c.AppComponent)
+        loadComponent: () => import('../teste-tecnico/src/app/app.component').then((c) => c.AppComponent)
     }
 ];

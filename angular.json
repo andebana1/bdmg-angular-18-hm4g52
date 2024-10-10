@@ -57,36 +57,36 @@
       "schematics": {},
       "sourceRoot": "src"
     },
-    "ibge-form": {
+    "teste-tecnico": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
-      "root": "projects/ibge-form",
-      "sourceRoot": "projects/ibge-form/src",
+      "root": "src/teste-tecnico",
+      "sourceRoot": "src/teste-tecnico/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ibge-form",
-            "index": "projects/ibge-form/src/index.html",
-            "browser": "projects/ibge-form/src/main.ts",
+            "outputPath": "dist/teste-tecnico",
+            "index": "src/teste-tecnico/src/index.html",
+            "browser": "src/teste-tecnico/src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "projects/ibge-form/tsconfig.app.json",
+            "tsConfig": "src/teste-tecnico/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "projects/ibge-form/public"
+                "input": "src/teste-tecnico/public"
               }
             ],
             "styles": [
-              "projects/ibge-form/src/styles.scss"
+              "src/teste-tecnico/src/styles.scss"
             ],
             "scripts": []
           },
@@ -118,10 +118,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ibge-form:build:production"
+              "buildTarget": "teste-tecnico:build:production"
             },
             "development": {
-              "buildTarget": "ibge-form:build:development"
+              "buildTarget": "teste-tecnico:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -136,16 +136,16 @@
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "projects/ibge-form/tsconfig.spec.json",
+            "tsConfig": "src/teste-tecnico/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "projects/ibge-form/public"
+                "input": "src/teste-tecnico/public"
               }
             ],
             "styles": [
-              "projects/ibge-form/src/styles.scss"
+              "src/teste-tecnico/src/styles.scss"
             ],
             "scripts": []
           }
